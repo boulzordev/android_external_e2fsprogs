@@ -10,4 +10,10 @@
 /* Takes exactly the same args as the tune2fs exectuable.
  * Is the entrypoint for libtune2fs.
  */
+#ifdef __cplusplus
+extern "C" {
+#endif
 int tune2fs_main(int argc, char **argv);
+#ifdef __cplusplus
+}
+#endif
